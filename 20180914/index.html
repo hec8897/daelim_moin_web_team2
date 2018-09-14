@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".login_btn").on("click",function(){
+      $(".section_wrap").css({"background-color":"rgba(0,0,0,0.6)"})
+      $(".login_box").css({"display":"block"})
+
+    })
+    $(".login_box_close").on("click",function(){
+      $(".section_wrap").css({"background-color":"rgba(0,0,0,0.0)"})
+      $(".login_box").css({"display":"none"})
+    })
+  })
+
+
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+
+
+    <section>
+      <div class="section_wrap">
+
+
+      <div class="boxs">
+
+        <div class="sitelogo">
+          <h1>SITE</h1>
+          <h1>LOGO</h1>
+        </div>
+
+
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box3">
+
+        </div>
+      </div>
+      <div class="login_box">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="id"></br>
+          <input type="password" name="" value="pw">
+          <button type="button" name="button" value="로그인">로그인</button>
+
+        </form>
+        <div class="login_box_close">닫기</div>
+      </div>
+</div>
+
+    </section>
+    <div class="login_btn">
+      logIN_btn
+    </div>
+  </div>
+
+</body>
+
+</html>
