@@ -1,0 +1,382 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,ol{
+  list-style-type: none;
+}
+
+html, body {
+  font-size: 12.5px;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*intro page css*/
+.intor_section {
+  min-width: 1280px;
+  width: 101%;
+  height: 100vh;
+  background: url(../img/ex2.jpg);
+  overflow: hidden;
+  background-size: 110%;
+  background-position: left top;
+  animation: ani1 40s linear infinite normal;
+}
+
+.section_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*background-img animation*/
+@keyframes ani1 {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: center;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: center;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.boxs {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 1280px;
+}
+
+.sitelogo {
+  padding-top: 120px;
+}
+
+.sitelogo>h1:nth-child(1) {
+  font-size: 6rem;
+  color: black;
+}
+
+.sitelogo>h1:nth-child(2) {
+  font-size: 6rem;
+  color: red;
+}
+
+.box1, .box2, .box3 {
+  width: 30%;
+  height: 280px;
+  margin-top: 80px;
+  display: inline-block;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: rgba(245, 29, 68, 0.6);
+}
+
+.box1_img, .box2_img, .box3_img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease all;
+  margin: 0px auto;
+}
+
+.box1:hover .box1_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  margin-top: 10px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.box2:hover .box2_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  margin-top: 10px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.box3:hover .box3_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  margin-top: 10px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.box1_img img, .box2_img img, .box3_img img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box1_text, .box2_text, .box3_text {
+  color: white;
+  font-size: 2.0rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*login_sys*/
+.login_btn {
+  width: 120px;
+  height: 50px;
+  background-color: rgba(128, 187, 40, 0.6);
+  z-index: 999;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+.login_box {
+  width: 800px;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.login_box_close {
+  width: 70px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*login_sys*/
+/*intro page css*/
+/*page1 css*/
+.page1_wrap{
+  display: flex;
+  flex-direction: row;
+}
+aside{
+  width: 30%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: gray;
+
+}
+article{
+  width: 100%;
+
+}
+.aside_wraper{
+  width: 100%;
+  height: 80%;
+  margin-top: 20%;
+  text-align: center;
+}
+.aside_wraper h1{
+  font-size: 3rem;
+}
+.team_logo{
+  width: 90%;
+  height: 200px;
+  background-color: white;
+  margin: 50px auto;
+
+}
+.aside_nav{
+  width: 90%;
+  height: 500px;
+  background-color: white;
+  margin: 0px auto;
+  text-align: center;
+}
+.aside_nav ul li{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+header{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 3px solid black;
+  box-sizing: border-box;
+}
+.nav_show_btn{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+  html {
+    font-size: 10px;
+  }
+
+  /*intro page css*/
+  .section_wrap {}
+
+  .intor_section {
+    min-width: 770px;
+    animation: ani1 10s linear 0 normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: gray;
+  }
+
+  .sitelogo {
+    padding-top: 150px;
+  }
+
+  .boxs {
+    max-width: 900px;
+  }
+
+  .box1, .box2, .box3 {
+    width: 31%;
+    height: 250px;
+    background-color: rgba(198, 255, 220, 0.6);
+  }
+
+  .box1_img, .box2_img, .box3_img {
+    display: none;
+  }
+  .login_btn {
+    right: 20px;
+  }
+
+  .login_box {
+    width: 500px;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+
+  /*intro page css*/
+  /*page1 css*/
+  .page1_wrap{
+    display: flex;
+    flex-direction: row;
+  }
+  aside{
+    width: 30%;
+    margin-left: -30%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: gray;
+    z-index: 999;
+    opacity: 0.6;
+    position: absolute;
+
+  }
+  article{
+    width: 100%;
+    position: absolute;
+
+  }
+  .aside_wraper{
+    width: 100%;
+    height: 80%;
+    margin-top: 20%;
+    text-align: center;
+  }
+  .aside_wraper h1{
+    font-size: 3rem;
+  }
+  .team_logo{
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    margin: 50px auto;
+
+  }
+  .aside_nav{
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .aside_nav ul li{
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+  }
+  .nav_show_btn{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 9px;
+  }
+
+  /*intro page css*/
+  .intor_section {
+    min-width: 320px;
+    animation: ani1 10s linear 0 normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    background-position: bottom;
+    background-color: gray;
+  }
+
+  .boxs {
+    min-width: 320px;
+  }
+
+  .box1, .box2, .box3 {
+    width: 90%;
+    max-width: 400px;
+    height: 130px;
+    margin-top: 20px;
+    background-color: rgba(198, 255, 220, 0.6);
+  }
+
+  .box1_img, .box2_img, .box3_img {
+    display: none;
+  }
+  .login_btn {
+    right: 20px;
+  }
+
+  .login_box {
+    width: 90%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  /*intro page css*/
+}
