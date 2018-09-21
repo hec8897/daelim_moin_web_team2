@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    $("#team_ul").on("click",function(){
+      $(".small_list_1").toggle();
+    })
+    $("#member_ul").on("click",function(){
+      $(".small_list_2").toggle();
+    })
+    $("#league_ul").on("click",function(){
+      $(".small_list_3").toggle();
+    })
+
+
+  $("#hamber_open").on("click",function(){
+    $(".nav").animate({left:'0px'});
+      $(this).css({"display":"none"});
+      $("#hamber_close").css({"display":"block"});
+  });
+  $("#hamber_close").on("click",function(){
+    $(".nav").animate({left:'-250px'});
+      $("#hamber_close").css({"display":"none"});
+      $("#hamber_open").css({"display":"block"});
+  });
+
+
+
+});
+
+  </script>
+  <title></title>
+</head>
+
+<body>
+  <div class="page1_wrap">
+
+    <div class="head">
+
+      <div class="head_logo_section">
+        <div class="hamber" id="hamber_open">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="hamber" id="hamber_close">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a href="index.html"><div class="head_logo">
+        </div></a>
+      </div>
+
+      <div class="head_login">
+        Team_logo v
+      </div>
+    </div>
+    <div class="page1_article">
+      <div class="nav">
+        <div class="nav_team_logo_box">
+        </div>
+        <p>WELCOME</p>
+        <h1>TEAM NAME(php처리)</h1>
+        <div class="menu_list">
+        <ul class="high_list">
+          <h2>MENU</h2>
+          <li id="team_ul">&emsp;TEAM</li>
+
+          <ul class="small_list_1">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+          </ul>
+
+          <li id="member_ul">&emsp;MEMBER</li>
+          <ul class="small_list_2">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+          </ul>
+
+          <li id="league_ul">&emsp;LEAGUE</li>
+          <ul class="small_list_3">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+          </ul>
+        </ul>
+      </div>
+      </div>
+
+      <div class="main">
+        <h1>Legue page</h1>
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
