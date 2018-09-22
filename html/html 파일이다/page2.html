@@ -3,40 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/master.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-  <script type="text/javascript">
-  $(document).ready(function(){
+  <script src="js/event.js"></script>
 
-    $("#team_ul").on("click",function(){
-      $(".small_list_1").toggle();
-    })
-    $("#member_ul").on("click",function(){
-      $(".small_list_2").toggle();
-    })
-    $("#league_ul").on("click",function(){
-      $(".small_list_3").toggle();
-    })
-
-
-  $("#hamber_open").on("click",function(){
-    $(".nav").animate({left:'0px'});
-      $(this).css({"display":"none"});
-      $("#hamber_close").css({"display":"block"});
-  });
-  $("#hamber_close").on("click",function(){
-    $(".nav").animate({left:'-250px'});
-      $("#hamber_close").css({"display":"none"});
-      $("#hamber_open").css({"display":"block"});
-  });
-
-
-
-});
-
-  </script>
   <title></title>
 </head>
 

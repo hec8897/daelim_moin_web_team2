@@ -3,40 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/master.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-  <script type="text/javascript">
-  $(document).ready(function(){
-
-    $("#team_ul").on("click",function(){
-      $(".small_list_1").toggle();
-    })
-    $("#member_ul").on("click",function(){
-      $(".small_list_2").toggle();
-    })
-    $("#league_ul").on("click",function(){
-      $(".small_list_3").toggle();
-    })
-
-
-  $("#hamber_open").on("click",function(){
-    $(".nav").animate({left:'0px'});
-      $(this).css({"display":"none"});
-      $("#hamber_close").css({"display":"block"});
-  });
-  $("#hamber_close").on("click",function(){
-    $(".nav").animate({left:'-250px'});
-      $("#hamber_close").css({"display":"none"});
-      $("#hamber_open").css({"display":"block"});
-  });
-
-
-
-});
-
-  </script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+  <script src="js/event.js"></script>
   <title></title>
 </head>
 
@@ -56,13 +28,16 @@
           <div></div>
           <div></div>
         </div>
-        <a href="index.html"><div class="head_logo">
-        </div></a>
+        <a href="index.html">
+          <div class="head_logo">
+          </div>
+        </a>
       </div>
 
       <div class="head_login">
         Team_logo v
       </div>
+
     </div>
     <div class="page1_article">
       <div class="nav">
@@ -71,38 +46,97 @@
         <p>WELCOME</p>
         <h1>TEAM NAME(php처리)</h1>
         <div class="menu_list">
-        <ul class="high_list">
-          <h2>MENU</h2>
-          <li id="team_ul">&emsp;TEAM</li>
+          <ul class="high_list">
+            <h2>MENU</h2>
+            <li id="team_ul">&emsp;TEAM</li>
 
-          <ul class="small_list_1">
-            <li>list1</li>
-            <li>list2</li>
-            <li>list3</li>
-            <li>list4</li>
-          </ul>
+            <ul class="small_list_1">
+              <li>list1</li>
+              <li>list2</li>
+              <li>list3</li>
+              <li>list4</li>
+            </ul>
 
-          <li id="member_ul">&emsp;MEMBER</li>
-          <ul class="small_list_2">
-            <li>list1</li>
-            <li>list2</li>
-            <li>list3</li>
-            <li>list4</li>
-          </ul>
+            <li id="member_ul">&emsp;MEMBER</li>
+            <ul class="small_list_2">
+              <li>list1</li>
+              <li>list2</li>
+              <li>list3</li>
+              <li>list4</li>
+            </ul>
 
-          <li id="league_ul">&emsp;LEAGUE</li>
-          <ul class="small_list_3">
-            <li>list1</li>
-            <li>list2</li>
-            <li>list3</li>
-            <li>list4</li>
+            <li id="league_ul">&emsp;LEAGUE</li>
+            <ul class="small_list_3">
+              <li>list1</li>
+              <li>list2</li>
+              <li>list3</li>
+              <li>list4</li>
+            </ul>
           </ul>
-        </ul>
-      </div>
+        </div>
       </div>
 
       <div class="main">
         <h1>TEAM PAGE</h1>
+
+        <div class="my_team_box">
+          <div class="my_team_logo">
+            <p>TEAM NAME[PHP처리]</p>
+            <div class="my_logo">
+              TEMA_LOGO[php처리  ]
+            </div>
+          </div>
+          <div class="my_team_member">
+            <div class="member_tit">
+              <p>MEMBER LIST</p>
+
+              <!--멤버검색하면 리스트에 검색한 이름만뜨게 / 멤버추가는 다른페이지에서-->
+
+              <form class="" action="index.html" method="post">
+
+              <div class="member_input">
+                <input type="text" name="" value="">
+                <div class="member_pluse">
+                  <a href="">+</a>
+                </div>
+
+                <div class="member_find">
+                  <input type="button" name="" value="">
+                </div>
+
+              </div>
+            </form>
+
+            </div>
+
+
+            <!--PHP 처리해야할부분!-->
+            <!--li 클릭하면 PAGE2 에서 바로 그 이름에 해당하는 회원을 볼수있어야함-->
+            <ul>
+                <!--이부분은 없앨꺼임-->
+              <li><span>연번</span> <span>이름</span><span>보직</span><span>생년월일</span><span>연락처</span></li>
+              <!--이부분은 없앨꺼임-->
+              <a href="page2.html"><li><span>001</span><span>김다운</span><span>타자</span><span>930408</span><span>010-0000-0000</span></li></a>
+              <li><span>002</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+              <li><span>003</span></li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="my_team_date">
+          <h2>SCHEDULE</h2>
+
+        </div>
 
       </div>
 
