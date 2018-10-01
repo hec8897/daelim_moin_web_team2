@@ -1,78 +1,160 @@
-<!DOCTYPE html>
-<html>
+<?php
+if (!isset($_SESSION)) {
+  // echo "세션 없음";
+  session_start();
+}else{
+  // echo "세션 있음";
+  session_start();
+}
+$m_id = $_SESSION['m_id'];
+$m_pw = $_SESSION['m_pw'];
+?>
+  <!DOCTYPE html>
+  <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/event.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/event.js"></script>
 
-<body>
-  <div class="wrap">
-    <section class="intor_section">
-      <div class="section_wrap">
-        <div class="boxs">
-          <div class="sitelogo"></div>
-          <!--변경-->
-          <div class="index_box1">
+    <!-- 메모장CSS 완성시 삭제바람 -->
+    <style media="screen">
+      .memo{
+        width: 500px;
+        height: 200px;
+        background-color: rgba(255,255,255,0.4);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
 
-            <a href="page1.html">
-              <div class="box1_img">
-                <img src="img/cart.png" alt="">
+  <body>
+    <div class="wrap">
+
+      <!-- 메모장영역 완성시 삭제바람 -->
+
+      <div class="memo">
+        <h1>메모장입니다</h1>
+
+        테스트 계정</br>
+        계정:admin / 패스워드 :admin</br>
+        진행사항 : 로그인 로그아웃 UI / 시스템 완성(10/01)</br>
+      <b>*****클릭하면사라짐******</b>
+
+
+      </div>
+      <script type="text/javascript">
+      $(".memo").click(function(){
+        $(this).hide()
+      })
+      </script>
+      <!-- 메모장영역 완성시 삭제바람 -->
+
+
+      <section class="intor_section">
+        <div class="section_wrap">
+          <div class="boxs">
+            <div class="sitelogo"></div>
+            <!--변경-->
+            <div class="index_box1">
+
+              <a href="team.php">
+                <div class="box1_img">
+                  <img src="img/cart.png" alt="">
+                </div>
+              </a>
+
+              <div class="box1_text">
+                팀 관리
               </div>
-            </a>
-
-            <div class="box1_text">
-              팀 관리
             </div>
+
+            <div class="index_box2">
+
+              <a href="player.php">
+                <div class="box2_img">
+                  <img src="img/people.png" alt="">
+                </div>
+              </a>
+
+              <div class="box2_text">
+                선수 관리
+              </div>
+            </div>
+            <div class="index_box3">
+
+              <a href="league.php">
+                <div class="box3_img">
+                  <img src="img/zoom.png" alt="">
+                </div>
+              </a>
+              <div class="box3_text">
+                리그 관리
+              </div>
+            </div>
+
+            <!--변경-->
           </div>
 
-          <div class="index_box2">
-
-          <a href="page2.html">
-            <div class="box2_img">
-              <img src="img/people.png" alt="">
+          <div class="login_box">
+            <div class="login_selector">
+              <p id="selector_login">Login</p>
+              <p id="selector_join">Join</p>
             </div>
-          </a>
-            <div class="box2_text">
-              선수 관리
+
+            <div class="select_login">
+              <div class="login_mark_people"></div>
+
+              <div class="logout">
+                      <?php
+                if (isset($_SESSION['m_id']) || isset($_SESSION['m_pw'])) {
+                  echo "<p>[".$m_id."] 님이 로그인중입니다</p>";
+                  echo "<p>로그아웃을 하시겠습니까?</p>";
+                  echo "
+                  <button type='submit' name='button' value='로그아웃' class='logout_yes'>
+                  <a href='dess_sess.php'>예</a>
+                  </button>
+
+                  <div class='login_box_close'>아니오</div>
+
+                  ";
+                }else{
+                  ?>
+
+              </div>
+
+
+                <form class="login_form" action="login_proc.php" method="get">
+                  <input type="text" name="m_id" placeholder="ID" autocomplete="off" class="login_input"></br>
+                  <input type="password" name="m_pw" placeholder="PW" autocomplete="off" class="password_input">
+                  <button type="submit" name="button" value="로그인" class="form_login_btn">로그인</button>
+                  <div class="login_box_close">닫기</div>
+                </form>
+
+              <? } ?>
 
             </div>
+            <div class="select_join">
+            <h1>회원가입</h1>
+            </div>
+
+
           </div>
-          <div class="index_box3">
 
-            <a href="page3.html">
-            <div class="box3_img">
-              <img src="img/zoom.png" alt="">
-            </div>
-          </a>
-            <div class="box3_text">
-              리그 관리
-
-            </div>
-          </div>
-
-          <!--변경-->
         </div>
-        <div class="login_box">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" value="id"></br>
-            <input type="password" name="" value="pw">
-            <button type="button" name="button" value="로그인">로그인</button>
-          </form>
-          <div class="login_box_close">닫기</div>
-        </div>
+
+      </section>
+      <div class="login_btn">
+        Sign In
+      </div>
     </div>
 
-    </section>
-    <div class="login_btn">
-      logIN_btn
-    </div>
-  </div>
+  </body>
 
-</body>
-
-</html>
+  </html>
