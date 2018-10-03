@@ -1,3 +1,11 @@
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+
 html, body {
   margin: 0px;
   padding: 0px;
@@ -120,7 +128,15 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-/*login_sys*/
+/*================================================================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*================================================================*/
 
 .login_btn {
   width: 120px;
@@ -145,7 +161,7 @@ body::-webkit-scrollbar {
 .login_box {
   width: 30%;
   height: 80vh;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
   position: fixed;
   left: 50%;
   top: 10%;
@@ -197,18 +213,19 @@ body::-webkit-scrollbar {
   width: 150px;
   height: 150px;
   margin: 0px auto;
-  margin-top: 5%;
+  margin-top: 15%;
   background-image: url(../img/group.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*===========login_form===================================*/
 
 .login_form{
  width: 80%;
   height: 150px;
-  background-color: white;
+
   margin: 0px auto;
-  margin-top: 30px;
+  margin-top:40px;
 }
 .login_input{
   width: 100%;
@@ -239,6 +256,50 @@ body::-webkit-scrollbar {
 
 }
 
+/*===========login_form===================================*/
+/*===========join_form===================================*/
+
+.join_form{
+   width: 80%;
+   height: 350px;
+   margin: 30px auto;
+   overflow-y: scroll;
+   overflow-x: hidden;
+
+ }
+ .join_form h1{
+   margin:0px;
+   font-weight: bold;
+ }
+ .join_form p{
+   margin: 0px;
+   font-size: 0.8rem;
+   padding: 10px;
+ }
+ .join_inset{
+   width: 90%;
+   height: 30px;
+   background-color: lightgray;
+   border: none;
+   padding-left: 10px;
+ }
+#form_join_btn{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  height: 30px;
+  background-color:red;
+  color: white;
+  border: none;
+
+}
+ #upload_img{
+
+   margin-top: 20px;
+ }
+
+
+ /*===========join_form===================================*/
 
 .login_box_close {
   width: 70%;
@@ -278,7 +339,16 @@ body::-webkit-scrollbar {
   height: 30px;
   display: block;
 }
-/*login_sys*/
+/*================================================================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*====================================login_sys===================*/
+/*================================================================*/
+/*================================================================*/
+
 
 /*intro page css*/
 
@@ -361,14 +431,19 @@ body::-webkit-scrollbar {
   background-color: #101a2e;
   box-sizing: border-box;
 }
+#phpteamlogo{
+  background-size: 100% !important;
+  background-repeat: no-repeat!important;
+}
 
 .nav_team_logo_box {
   width: 70%;
   margin: 50px auto;
   max-width: 160px;
   height: 160px;
-  background-color: white;
   border-radius: 150px;
+  background: white;
+
 }
 
 .nav p {
@@ -440,6 +515,41 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
+.logout_box{
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  display: none;
+
+}
+.logout_team_logo{
+  width: 150px;
+  height: 70%;
+  background-color: gray;
+  float: left;
+}
+.logout_team_info{
+  width: calc(100% - 150px);
+  height: 70%;
+  background-color: green;
+  float: left;
+}
+
+.logout_logout{
+  width: 100%;
+  height: 30%;
+  float: left;
+}
+
+.logout_logout div{
+  width: 50%;
+  height: 50%;
+  background-color: gray;
+  float: left;
+}
 /*====page1 css=======*/
 
 .my_team_box {
@@ -468,7 +578,8 @@ body::-webkit-scrollbar {
 
 .my_logo {
   width: 80%;
-  height: 50%;
+  height: 70%;
+  max-height: 400px;
   margin: 5% auto;
   background-color: #e6eaed;
 }
@@ -783,7 +894,7 @@ body::-webkit-scrollbar {
   color: white;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 770px) {
+@media screen and (max-width: 1000px) and (min-width: 770px) {
 
   /*intro page css*/
   .section_wrap {}
@@ -945,7 +1056,7 @@ body::-webkit-scrollbar {
   /*page3 css*/
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 770px) {
   /*intro page css*/
   .intor_section {
     min-width: 320px;
