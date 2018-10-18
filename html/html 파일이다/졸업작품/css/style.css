@@ -1,0 +1,1420 @@
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 6.=page3css= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e6e9ec;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+/*============영역 바로가기 2.=index_page_css= /===================================*/
+.intor_section {
+  min-width: 1280px;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/ex2.jpg);
+  overflow: hidden;
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: ani1 40s linear infinite normal;
+}
+
+.section_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*intro background-img animation*/
+@keyframes ani1 {
+  0% {
+    background-position: left top;
+  }
+
+  25% {
+    background-position: center;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  75% {
+    background-position: center;
+  }
+
+  100% {
+    background-position: left top;
+  }
+}
+
+.boxs {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.sitelogo {
+  width: 40%;
+  height: 120px;
+  background-image: url(../img/LOGO.png);
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  background-size: 100%;
+  background-position: center;
+  margin-top: 10%;
+}
+
+.index_box1, .index_box2, .index_box3 {
+  width: 25%;
+  height: 35vh;
+  margin-top: 10%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  background-color: rgba(245, 29, 68, 0.6);
+}
+
+.index_box1 {
+  left: 10%;
+}
+
+.index_box2 {
+  left: 37%;
+}
+
+.index_box3 {
+  right: 10%;
+}
+
+.box1_img, .box2_img, .box3_img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease all;
+  margin: 0px auto;
+}
+
+.index_box1:hover .box1_img {
+  height: 120px;
+  margin-top: 50px;
+}
+
+.index_box2:hover .box2_img {
+  height: 120px;
+  margin-top: 50px;
+}
+
+.index_box3:hover .box3_img {
+  height: 120px;
+  margin-top: 50px;
+}
+
+.box1_img img, .box2_img img, .box3_img img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box1_text, .box2_text, .box3_text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+.login_btn {
+  width: 120px;
+  z-index: 999;
+  background-color: rgba(23, 42, 126, 0.3);
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login_btn:hover {
+  background-color: rgba(23, 42, 126, 0.9);
+}
+
+.login_box {
+  width: 30%;
+  min-width: 400px;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 100px 3px rgb(125, 125, 125);
+  border: 3px solid lightgray;
+  display: none;
+}
+
+.login_selector {
+  width: 70%;
+  height: 50px;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.login_selector p {
+  width: 25%;
+  height: 90%;
+  line-height: 50px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  cursor: pointer;
+}
+
+.login_selector p:nth-child(1) {
+  border-bottom: 3px solid #1b2d43;
+  box-sizing: border-box;
+}
+
+.select_join {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+  display: none;
+}
+
+.select_join h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.login_mark_people {
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+  margin-top: 15%;
+  background-image: url(../img/group.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*===========login_form===================================*/
+.login_form {
+  width: 80%;
+  height: 150px;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+
+.login_input {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border: none;
+  background-color: lightgray;
+}
+
+.password_input {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  background-color: lightgray;
+}
+
+.form_login_btn {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+  ;
+  height: 30px;
+  background-color: #1b2d43;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+/*===========login_form===================================*/
+/*===========join_form===================================*/
+.join_form {
+  width: 85%;
+  height: 85%;
+  margin: 30px auto;
+  overflow-y: scroll;
+  scrollbar: none;
+}
+
+.join_form::-webkit-scrollbar {
+  display: none;
+}
+
+.join_form h1 {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.join_form p {
+  margin: 2.5% auto;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.join_inset {
+  width: 90%;
+  height: 30px;
+  background-color: lightgray;
+  border: none;
+  padding-left: 10px;
+}
+
+#form_join_btn {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1%;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+#upload_img {
+  margin-top: 20px;
+}
+
+#join_id {
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+#idcheck {
+  width: 17%;
+  display: inline-block;
+  border: none;
+  margin-left: 3%;
+  background-color: red;
+  font-size: 0.6rem;
+  color: white;
+  height: 30px;
+  text-align: center;
+}
+
+/*===========join_form===================================*/
+.login_box_close {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  background-color: #1b2d43;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.logout p {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logout_yes {
+  width: 60%;
+  height: 30px;
+  display: block;
+  margin-left: 20%;
+  background-color: #1b2d43;
+  border: none;
+}
+
+.logout_yes a {
+  color: white;
+  text-decoration: none;
+}
+
+.logout .login_box_close {
+  width: 60%;
+  height: 30px;
+  display: block;
+}
+
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*============영역 바로가기 1.=login_sys= /===================================*/
+/*intro page css*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+.page1_wrap, .page2_wrap, .page3.wrap {
+  background-color: #e6e9ec;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page1_article {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.head {
+  width: 100%;
+  height: 55px;
+  background-color: #1b2d43;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid #101a2e;
+}
+
+.head_logo_section {
+  width: 18%;
+  height: 100%;
+  min-width: 230px;
+  max-width: 345px;
+  box-sizing: border-box;
+}
+
+.hamber {
+  width: 10%;
+  height: 25px;
+  margin-top: 12px;
+  margin-left: 10%;
+  float: left;
+  display: none;
+}
+
+.hamber>div {
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  background: red;
+}
+
+.head_logo {
+  width: 60%;
+  height: 100%;
+  float: left;
+  background-image: url(../img/LOGO.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 20%;
+}
+
+.head_login {
+  margin-left: 70%;
+  width: 10%;
+  color: white;
+  line-height: 55px;
+  float: right;
+}
+
+.page1_article {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 18%;
+  min-width: 230px;
+  min-height: 100%;
+  background-color: #101a2e;
+  box-sizing: border-box;
+}
+
+#phpteamlogo {
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.nav_team_logo_box {
+  width: 70%;
+  margin: 50px auto;
+  max-width: 160px;
+  height: 160px;
+  border-radius: 150px;
+  background-position: center;
+}
+
+.nav p {
+  color: #6e7b8b;
+  text-align: center;
+}
+
+.nav h1 {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+
+.menu_list {
+  width: 100%;
+  font-size: 14pt;
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+
+.menu_list h2 {
+  width: 100%;
+  color: #6e7b8b;
+  padding-left: 20px;
+  height: 42px;
+  margin-left: 20px;
+}
+
+.menu_list ul {}
+
+.menu_list ul li {
+  width: 100%;
+  height: 50px;
+  color: #6e7b8b;
+  line-height: 50px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.menu_list ul li:hover {
+  background-color: #1b2d43;
+}
+
+.small_list_1, .small_list_2, .small_list_3 {
+  background-color: #1b2d43;
+  display: none;
+}
+
+.small_list_1 li, .small_list_2 li, .small_list_3 li {
+  list-style: none !important;
+  padding-left: 50px !important;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e9ec;
+}
+
+.main>h1 {
+  height: 50px;
+  width: 100%;
+  background-color: #ff3b43;
+  font-size: 1.2rem;
+  line-height: 50px;
+  color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 3.=nav & page1,2,3공통_css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+.my_team_box {
+  width: 95%;
+  height: 45vh;
+  margin: 1.5% auto;
+}
+
+.my_team_logo {
+  width: 27%;
+  height: 100%;
+  background-color: white;
+  margin-right: 2%;
+  float: left;
+}
+
+.my_team_logo p {
+  width: 90%;
+  color: #336666;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 1.2rem;
+}
+
+.my_logo {
+  width: 80%;
+  height: 70%;
+  max-height: 400px;
+  margin: 5% auto;
+  background-color: #e6eaed;
+}
+
+.my_team_member {
+  width: 71%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+
+.member_tit {
+  width: 95%;
+  height: 35px;
+  color: #336666;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.member_tit p {
+  width: 40%;
+  font-size: 1.5rem;
+  line-height: 35px;
+  float: left;
+}
+
+
+.member_input {
+ width: 30%;
+ height: 25px;
+ line-height: 30px;
+ float: left;
+ border: 2px solid  #1b2d43;
+ border-radius: 10px;
+}
+.zoom_icon{
+  height: 100%;
+  width: 15%;
+  float: left;
+  background-image: url(../img/find.svg);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+.member_input_search{
+  border: none;
+  display: block;
+  width: 80%;
+  float: left;
+  height: 85%;
+}
+
+.member_input_submit  {
+  float:left;
+  height: 30px;
+  margin-left: 5px;
+  width: 60px;
+  border: none;
+  border-radius: 15px;
+  background-color: #1b2d43;
+  color: white;
+  font-size: 0.8rem;
+
+}
+.member_plus{
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  float: left;
+  background-color: gray;
+  font-size: 0.8rem;
+  line-height: 30px;
+  margin-left: 5px;
+  background-color: #1b2d43;
+  color: white;
+  cursor: pointer;
+}
+
+.my_team_member ul {
+  width: 95%;
+  height: 65%;
+  margin: 0px auto;
+  overflow-y: scroll;
+}
+
+.my_team_member ul li {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.my_team_member ul li span {
+  margin-right: 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+.my_team_date {
+  width: 95%;
+  height: 600px;
+  margin: 1.5% auto;
+  background-color: white;
+}
+
+.my_team_date>h2 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #415063;
+  color: white;
+}
+
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 4.=page1.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+.my_member_box {
+  width: 95%;
+  height: 350px;
+  margin: 2% auto;
+}
+
+.member_info {
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+
+.member_member_tit {
+  width: 95%;
+  height: 30px;
+  color: #336666;
+  margin: 20px auto;
+  margin-bottom: -4px;
+  font-size: 1.2rem;
+}
+
+.member_member_find {
+  width: 95%;
+  height: 11%;
+  margin: 0px auto;
+  border: 1.2px solid #cccccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#member_finder {
+  width: 90%;
+  height: 20px;
+  margin-top: 1%;
+  border: none;
+}
+
+#member_finder_btn {
+  width: 7%;
+  background-image: url(../img/find.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  border: none;
+  margin-top: 2%;
+}
+
+.member_infomation {
+  width: 95%;
+  height: 70%;
+  margin: 10px auto;
+}
+
+.member_photo {
+  width: 40%;
+  max-width: 140px;
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+  max-height: 200px;
+  border: 2px solid #415063;
+  box-sizing: border-box;
+  margin-right: 2%;
+  float: left;
+  /*여기지워야뎀*/
+  text-align: center;
+  line-height: 200px;
+}
+
+.member_is {
+  width: 58%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  float: right;
+}
+
+.member_is h1 {
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid #415063;
+}
+
+.member_is span {
+  color: #415063;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.member_is h1 span:nth-child(1) {
+  margin-right: 55px;
+}
+
+.member_is ul {
+  margin-top: 10px;
+  height: 83.5%;
+  overflow-y: scroll;
+}
+
+.member_is ul li {
+  height: 18%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+  line-height: 35px;
+  font-size: 0.8rem;
+}
+
+.member_is ul li p:nth-child(1) {
+  width: 30%;
+  text-align: left;
+  float: left;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.member_is ul li p:nth-child(2) {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.member_table {
+  width: 63%;
+  height: 100%;
+  background-color: white;
+  float: right;
+}
+
+.member_table_tit {
+  width: 95%;
+  height: 30px;
+  color: #336666;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #336666;
+  font-size: 1.2rem;
+}
+
+.record_table {
+  width: 95%;
+  height: 270px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  border: 1px solid #336666;
+  overflow: hidden;
+}
+
+.record_table h1 {
+  width: 100%;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  background-color: #415063;
+}
+
+.record_table select{
+  display: block;
+  height: 20px;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-right: 2%;
+  width: 15%;
+  float: right;
+}
+.record_batter_ul,.record_picture_ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.record_batter_ul{
+  display: none;
+
+}
+.record_picture_ul{
+  display: none;
+
+}
+.record_table ul:nth-child(1){
+  background-color: lightgray;
+  line-height: 30px;
+  border-bottom: 1px solid gray;
+  height: 30px;
+}
+.record_table ul{
+  height: 30px;
+  line-height:30px;
+  border-bottom: 1px solid lightgray;
+  box-sizing: border-box;
+}
+.record_ul ul:nth-last-child(1){
+  background-color: lightgray;
+  border: none;
+}
+
+.record_table li{
+  width: 6.8%;
+  height: 100%;
+  font-size: 0.8rem;
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+
+.member_chart {
+  width: 95%;
+  height: 450px;
+  margin: 0px auto;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.member_chart>h2 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #415063;
+  color: white;
+}
+
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 5.=page2.css= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+/*============영역 바로가기 7.=미디어쿼리(테블릿)= /===================================*/
+@media screen and (max-width: 1280px) and (min-width: 770px) {
+
+  /*intro page css*/
+  .section_wrap {}
+
+  .intor_section {
+    min-width: 770px;
+    animation: ani1 15s linear infinite normal;
+    background-size: cover;
+  }
+
+  .sitelogo {
+    margin-top: 10%;
+  }
+  .sitelogo:after{
+    content: '테블릿화면입니다';
+    animation: ani2 1s 5;
+    opacity: 0.0;
+  }
+
+
+
+    @keyframes ani2 {
+      0%{
+        opacity: 0.0;
+      }
+      100%{
+        opacity: 1.0;
+      }
+
+    }
+  .boxs {
+    max-width: 900px;
+  }
+
+  .index_box1, .index_box2, .index_box3 {
+    width: 28%;
+    height: 25vh;
+    margin-top: 10%;
+    background-color: rgba(198, 255, 220, 0.6);
+  }
+
+  .index_box1 {
+    left: 4%;
+  }
+
+  .index_box2 {
+    left: 35%;
+  }
+
+  .index_box3 {
+    right: 4%;
+  }
+
+  .box1_img, .box2_img, .box3_img {}
+
+  .index_box1:hover .box1_img {
+    margin-top: 25px;
+    pointer-events: none;
+  }
+
+  .index_box2:hover .box2_img {
+    margin-top: 25px;
+    pointer-events: none;
+  }
+
+  .index_box3:hover .box3_img {
+    margin-top: 25px;
+    pointer-events: none;
+  }
+
+  .login_btn {
+    right: 20px;
+  }
+
+  .login_box {
+    width: 60%;
+    max-width: 300px;
+    min-height: 80%;
+  }
+
+  .box1_text, .box2_text, .box3_text {
+    display: none;
+  }
+
+  /*intro page css*/
+  /*page1,2,3 css*/
+  .hamber:nth-child(1) {
+    display: block;
+  }
+
+  .head_logo {
+    margin-left: 10%;
+  }
+
+  .head_login {
+    display: none;
+  }
+
+  .nav {
+    height: 100%;
+    min-height: 1200px;
+    position: absolute;
+    left: -230px;
+  }
+
+  /*page1 css*/
+  .page1_wrap {
+    min-width: 900px;
+  }
+
+  .my_team_logo {
+    width: 30%;
+  }
+
+  .my_team_logo p {
+    font-size: 1.0rem;
+  }
+
+  .my_logo {
+    height: 75%;
+    background-size: 100%;
+    background-color: #e6eaed;
+  }
+
+  .my_team_member {
+    width: 68%;
+  }
+
+
+  .member_tit p {
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 35px;
+    float: left;
+  }
+
+
+
+  .my_team_member ul {
+    width: 95%;
+    height: 65%;
+    margin: 0px auto;
+    overflow-y: scroll;
+  }
+
+  .my_team_member ul li span {
+    margin-right: 9%;
+  }
+
+  /*page2 css*/
+  .page2_wrap {
+    min-width: 1000px;
+  }
+
+  .member_is span {
+    font-size: 0.8rem;
+  }
+
+  .member_is ul li {
+    font-size: 0.7rem;
+  }
+
+  .member_is ul li p:nth-child(1) {
+    font-size: 0.7rem;
+  }
+
+  .member_is ul li p:nth-child(2) {
+    width: 65%;
+    margin-left: 5%;
+  }
+
+
+  .record_table li{
+    width: 6.6%;
+    margin: 0px 0.0%;
+    height: 100%;
+    font-size: 0.7rem;
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  /*page3 css*/
+}
+
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+/*============영역 바로가기 8.=미디어쿼리(모바일)= /===================================*/
+@media screen and (max-width: 770px) {
+
+  /*intro page css*/
+  .intor_section {
+    min-width: 320px;
+    animation: ani1 10s linear 0 normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    background-position: bottom;
+    background-color: gray;
+  }
+
+  .sitelogo {
+    width: 70%;
+    margin-top: 15%;
+  }
+
+  .sitelogo:after{
+    content: '모바일화면입니다';
+    animation: ani2 1s 5;
+    opacity: 0.0;
+  }
+
+    @keyframes ani2 {
+      0%{
+        opacity: 0.0;
+      }
+      100%{
+        opacity: 1.0;
+      }
+
+    }
+
+  .boxs {
+    min-width: 320px;
+  }
+
+  .index_box1, .index_box2, .index_box3 {
+    margin: 20px auto;
+    width: 90%;
+    height: 100px;
+    display: block;
+  }
+
+  .index_box1:hover .box1_img {
+    margin-top: 5px;
+    pointer-events: none;
+  }
+
+  .index_box2:hover .box2_img {
+    margin-top: 5px;
+    pointer-events: none;
+  }
+
+  .index_box3:hover .box3_img {
+    margin-top: 5px;
+    pointer-events: none;
+  }
+
+  .login_btn {
+    width: 80px;
+    height: 30px;
+    right: 25px;
+    line-height: 30px;
+  }
+
+  .login_box {
+    width: 80%;
+    min-width: 250px;
+    transform: translateX(-53%);
+  }
+
+  /*intro page css*/
+  /*page1,2,3 공통 css*/
+  .head_logo {
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/LOGO.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10%;
+  }
+
+  .hamber:nth-child(1) {
+    display: block;
+  }
+
+  .nav {
+    height: 100%;
+    min-height: 1800px;
+    position: absolute;
+    left: -230px;
+  }
+
+  .head_login {
+    display: none;
+  }
+
+  /*page1 css*/
+  .my_team_box {
+    width: 100%;
+    height: 100%;
+    margin: 1.5% auto;
+  }
+
+  .my_team_logo {
+    width: 90%;
+    height: 400px;
+    margin: 20px auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    float: none;
+  }
+
+  .my_team_member {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: white;
+    float: none;
+  }
+
+  /**/
+  .member_tit {
+    width: 95%;
+    height: 35px;
+    color: #336666;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    border:none;
+  }
+
+  .member_tit p {
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 35px;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+
+  .member_input {
+   width: 50%;
+   height: 25px;
+   line-height: 30px;
+   border: 2px solid  #1b2d43;
+   border-radius: 10px;
+  }
+
+
+  /**/
+
+  .my_team_member li span {
+    margin-right: 5px;
+    font-size: 0.8rem;
+  }
+
+  .my_team_member li span:nth-child(4) {
+    display: none;
+  }
+
+  .my_team_date {
+    width: 90%;
+    height: 500px;
+    margin: 1.5% auto;
+    background-color: white;
+  }
+
+  .member_tit {
+    padding-bottom: 30px;
+  }
+
+
+  /*page2 css*/
+  .page2_wrap {
+    height: 800px;
+  }
+
+  .my_member_box {
+    height: 100%;
+  }
+
+  .member_info {
+    width: 95%;
+    height: 330px;
+    float: none;
+    margin: 0px auto;
+  }
+
+  .member_member_tit {
+    padding-top: 20px;
+  }
+
+  .member_is span {
+    font-size: 0.8rem;
+  }
+
+  .member_is h1 span:nth-child(1) {
+    margin-right: 55px;
+  }
+
+  .member_is ul li {
+    font-size: 0.6rem;
+  }
+  .member_is ul li p{
+    width: 40%;
+    float: left;
+    background-color: gray;
+  }
+  .member_is ul li p:nth-child(2) {
+    width: 50%;
+    margin-left: 5%;
+    background-color: yellow;
+  }
+
+  .member_table {
+    width: 98%;
+    height: 450px;
+    float: none;
+    margin: 0px auto;
+  }
+
+  .member_table_tit {
+    width: 95%;
+    padding-top: 20px;
+  }
+
+  .record_table {
+    width: 98%;
+    height: 360px;
+    margin: 0px auto;
+  }
+
+  .record_table ul{
+    height: 42.5px;
+    line-height:30px;
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+  }
+
+  .record_table li{
+    width: 7.5%;
+    height: 100%;
+    font-size: 0.65rem;
+    float: left;
+    text-align: center;
+
+  }
+
+  .member_chart {
+    width: 90%;
+    margin: 20px auto;
+    height: 400px;
+  }
+
+  /*page3 css*/
+}
